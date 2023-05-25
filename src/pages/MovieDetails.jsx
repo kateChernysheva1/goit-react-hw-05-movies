@@ -19,7 +19,6 @@ function MovieDetails() {
   useEffect(() => {
     getMovieDetails(movieId)
       .then(function (response) {
-        console.log(response.data);
         setMovie(response.data);
       })
       .catch(function () {
@@ -54,7 +53,7 @@ function MovieDetails() {
             <div>
               <Title text={movie.title ?? movie.name}></Title>
 
-              {movie.vote_average && (
+              {movie.vote_average > 0 && (
                 <p>User Score: {Math.round(movie.vote_average)}%</p>
               )}
 

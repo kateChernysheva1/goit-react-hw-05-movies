@@ -13,7 +13,6 @@ function Cast() {
   useEffect(() => {
     getMovieCredits(movieId)
       .then(function (response) {
-        console.log(response.data.cast);
         if (!response.data.cast[0]) setNotFound(true);
         setCast(response.data.cast);
       })

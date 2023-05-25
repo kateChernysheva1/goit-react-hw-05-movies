@@ -14,7 +14,6 @@ function Home() {
     getTrending()
       .then(function (response) {
         setFilms(response.data.results);
-        console.log(response.data.results);
       })
       .catch(function (error) {
         Notiflix.Notify.failure(error.message);

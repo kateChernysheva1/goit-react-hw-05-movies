@@ -18,7 +18,6 @@ function Movies() {
     setLoading(true);
     getMovie(query)
       .then(function (response) {
-        console.log(response.data.results);
         if (!response.data.results[0]) setNotFound(true);
         else setNotFound(false);
         setMovie(response.data.results);

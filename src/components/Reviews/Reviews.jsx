@@ -11,7 +11,6 @@ function Reviews() {
   useEffect(() => {
     getMovieReviews(movieId)
       .then(function (response) {
-        console.log(response.data.results);
         if (!response.data.results[0]) setNotFound(true);
         setReviews(response.data.results);
       })

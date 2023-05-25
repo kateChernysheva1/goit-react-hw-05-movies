@@ -2,13 +2,7 @@ import Loading from 'components/Loading/Loading';
 import Title from 'components/Title/Title';
 import Notiflix from 'notiflix';
 import { Suspense, memo, useEffect, useRef, useState } from 'react';
-import {
-  Link,
-  NavLink,
-  Outlet,
-  useParams,
-  useLocation,
-} from 'react-router-dom';
+import { NavLink, Outlet, useParams, useLocation } from 'react-router-dom';
 import { getMovieDetails } from 'services/api';
 import { Back, Card, ErrorMsg } from './styles/MovieDetails.styled';
 

@@ -85,6 +85,7 @@ function MovieDetails() {
           </Card>
 
           <p>Additional information</p>
+
           <ul>
             <li>
               <NavLink to="cast">Cast</NavLink>
